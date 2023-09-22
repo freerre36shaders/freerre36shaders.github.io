@@ -1,0 +1,171 @@
+body {
+    background-color: #2a2a2a;
+    color: white;
+    font-family: 'Inclusive Sans', sans-serif;
+    height: 100%;
+    margin: 0;
+}
+
+.elements {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    z-index: 2;
+    max-height: 62.5vh;
+    overflow: auto;
+}
+
+.info-buttons {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.info-button {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.info-button:hover {
+    text-decoration: underline;
+}
+
+.button {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+    text-align: center;
+}
+
+.button:hover {
+    text-decoration: underline;
+}
+
+.background {
+    position: fixed;
+    min-height: 100vh;
+    min-width: 100vw;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#home {
+    background-image: url('images/backgrounds/kappapt-home.png');
+}
+
+#about {
+    background-image: url('images/backgrounds/about-background.png')
+}
+
+#contact {
+    background-image: url('images/backgrounds/contact-background.png');
+}
+
+#guide {
+    background-image: url('images/backgrounds/guide-background.png');
+}
+
+#changelogs {
+    background-image: url('images/backgrounds/changelogs-background.png')
+}
+
+#error {
+    background-image: url('images/backgrounds/error-background.png');
+}
+
+#fastpbr {
+    background-image: url('images/backgrounds/fastpbr-background.png');
+}
+
+#kappa {
+    background-image: url('images/backgrounds/kappa-background.png');
+}
+
+#kappapt {
+    background-image: url('images/backgrounds/kappapt-background.png');
+}
+
+#nostalgia {
+    background-image: url('images/backgrounds/nostalgia-background.png');
+}
+
+#nostalgiavx {
+    background-image: url('images/backgrounds/nostalgiavx-background.png');
+}
+
+#potato {
+    background-image: url('images/backgrounds/potato-background.png');
+}
+
+#simplicissimus {
+    background-image: url('images/backgrounds/simplicissimus-background.png');
+}
+
+#softvoxels {
+    background-image: url('images/backgrounds/softvoxels-background.png');
+}
+
+#softvoxelslite {
+    background-image: url('images/backgrounds/softvoxelslite-background.png');
+}
+
+#ushader {
+    background-image: url('images/backgrounds/ushader-background.png');
+}
+
+#vanillaplus {
+    background-image: url('images/backgrounds/vanillaplus-background.png');
+}
+
+a {
+    color: #50c878;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+ul li::before {
+    content: "•";
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+}
+
+ul ul li::before {
+    content: "•";
+}
+
+img {
+    border-radius: 10px;
+}

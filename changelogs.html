@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Changelogs for RRe36's Shaders</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/x-icon" href="images/favicons/home-favicon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="description" content="Here you can find the changelogs of the latest versions of all of RRe36's shaders.">
+        <meta name="keywords" content="shaders, rre36, minecraft">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="Changelogs for RRe36's Shaders">
+        <meta property="og:description" content="Here you can find the changelogs of the latest versions of all of RRe36's shaders.">
+        <meta property="og:url" content="https://freerre36shaders.github.io/changelogs">
+    </head>
+    <body>
+        <div class="background" id="changelogs"></div>
+        <a href="/" class="button">Back to Home</a>
+        <div class="elements">
+            <h1>Changelogs for RRe36's Shaders</h1>
+            <hr>
+            <p>Here you can find the changelogs of the latest versions of all of RRe36's shaders.</p>
+            <hr>
+            <h2 id="fastpbr-changelog"><a href="shaders/fastpbr">FastPBR Shader</a> Changelog</h2>
+            <p>Version: v1.1 (Latest)
+            <br>
+            Release date: June 13, 2023</p>
+            <h3>Changelog:</h3>
+            <ul>
+                <li>Fixed weather particle rendering</li>
+                <li>Removed vanilla entity shadows in the nether</li>
+                <li>Fixed incorrectly rendering volumetric fog in some indoor scenes</li>
+                <li>Added block mappings for Minecraft 1.20</li>
+                <li>Added support for color management capability of Iris 1.6.4</li>
+                <li>Improved motion blur</li>
+                <li>Fixed missing glow on dim emitters</li>
+                <li>Added proper moon phase handling</li>
+                <ul>
+                    <li>Moon phases now determine the brightness of the moonlight</li>
+                </ul>
+            </ul>
+            <hr>
+            <h2 id="kappa-changelog"><a href="shaders/kappa">Kappa Shader</a> Changelog</h2>
+            <p>Version: v5.2 (Latest)
+            <br>
+            Release date: June 12, 2023</p>
+            <h3>Changelog:</h3>
+            <ul>
+                <li>Fixed strange emission behavior when using resource pack reflections</li>
+                <li>Fixed incorrectly rendering volumetric fog when indoors in some scenes</li>
+                <li>Fixed incorrectly lit translucents during rain</li>
+                <li>Adjusted <abbr title="Temporal Anti-Aliasing and Upscaling">TAAU</abbr> behavior</li>
+                <ul>
+                    <li>Also added optional, more aggressive anti-flickering</li>
+                </ul>
+                <li>Added various foliage and emitter block mappings</li>
+                <ul>
+                    <li>Including new blocks of Minecraft 1.20</li>
+                </ul>
+                <li>Fixed bright lines when using volumetric water</li>
+                <li>Improved motion blur</li>
+                <li>Added support for color management capability of Iris 1.6.4</li>
+                <li>Added proper handling of moon phases</li>
+                <li>Raised default volumetric fog mist altitude to 120</li>
+                <li>Improved volumetric clouds and sun disk blending</li>
+            </ul>
+            <hr>
+            <h2 id="kappapt-changelog"><a href="shaders/kappapt">KappaPT</a> Changelog</h2>
+            <p>Version: P16b (Latest)
+            <br>
+            Release date: November 26, 2022</p>
+            <h3>Changelog:</h3>
+            <ul>
+                <li>Updated to match changes of <a href="shaders/kappa">Kappa Shader</a> v5.0a</li>
+                <ul>
+                    <li>Added cirrus and cirrostratus clouds</li>
+                    <li>Cloud reflections now match skybox better at low sun angles</li>
+                    <li>Fixed potential <abbr title="Not a Number">NaN</abbr>s with wetness puddles on NVIDIA <abbr title="Graphics Processing Unit">GPU</abbr>s</li>
+                    <li>Skybox reflections of below-horizon areas are now dimmer</li>
+                </ul>
+                <li>Fixed missing cloud settings</li>
+            </ul>
+            <hr>
+            <h2 id="nostalgia-changelog"><a href="shaders/nostalgia">Nostalgia Shader</a> Changelog</h2>
+            <p>Version: v5.0a T1 (Latest)
+            <br>
+            Release date: June 27, 2023</p>
+            <h3>Changelog:</h3>
+            <ul>
+                <li>Fixed minor issues with weird fog and ambient colors in the nether</li>
+                <li>Fixed white bar under certain circumstances while enabling lens flares</li>
+            </ul>
+            <hr>
+            <h2 id="nostalgiavx-changelog"><a href="shaders/nostalgiavx">NostalgiaVX</a> Changelog</h2>
+            <p>Version: P10b (Latest)
+            <br>
+            Release date: June 17, 2023</p>
+            <h3>Changelog:</h3>
+            <ul>
+                <li>Feature parity with <a href="shaders/nostalgia">Nostalgia Shader</a> v5.0</li>
+                <li>Fixed indirect lighting on cacti</li>
+                <li>Fixed volumetric fog in some indoor areas</li>
+                <li>Improved temporal ray guiding</li>
+                <li>Added optional legacy lens flare</li>
+                <li>Various internal clean-ups</li>
+                <li>Added support for handheld emitters</li>
+                <li>Fixed reflection accumulation breaking handheld items</li>
+                <li>Added support for color management of Iris 1.6.4</li>
+                <li>Added various block mappings for 1.20</li>
+                <li>Added various new emitter block mappings</li>
+                <li>Added optional aggressive <abbr title="Temporal Anti-Aliasing">TAA</abbr> anti-flicker</li>
+                <li>Fixed various issues with translucency shadows</li>
+                <li>Improved motion blur</li>
+                <li>Improved mapping of various sculk blocks</li>
+                <ul>
+                    <li>Including lots of dynamic emission for blocks depending on their state</li>
+                </ul>
+                <li>Fixed missing sunlight in VoxelPT reflections</li>
+                <li>Added emission mapping for lava cauldrons</li>
+                <li>Fixed mapping of rotated end rods</li>
+            </ul>
+            <hr>
+            <h2 id="potato-changelog"><a href="shaders/potato">Potato Shader</a> Changelog</h2>
+            <p>Version: v1.0d (Latest)
+            <br>
+            Release date: June 13, 2023</p>
+            <h3>Changelog:</h3>
+            <ul>
+                <li>Added block mappings for Minecraft 1.20 and other foliage that's been previously missing</li>
+                <li>Added support for color management capability of Iris 1.6.4</li>
+                <li>Improved motion blur</li>
+            </ul>
+            <hr>
+            <h2 id="simplicissimus-changelog"><a href="shaders/simplicissimus">Simplicissimus Shader</a> Changelog</h2>
+            <p>Version: v1.3a (Latest)
+            <br>
+            Release date: June 13, 2023</p>
+            <h3>Changelog:</h3>
+            <ul>
+                <li>Added block mappings for Minecraft 1.20 and other foliage that's been previously missing</li>
+                <li>Added support for color management capability of Iris 1.6.4</li>
+            </ul>
+            <hr>
+            <h2 id="softvoxels-changelog"><a href="shaders/softvoxels">Soft Voxels</a> Changelog</h2>
+            <p>Version: P7b (Latest)
+            <br>
+            Release date: June 17, 2023</p>
+            <h3>Changelog:</h3>
+            <ul>
+                <li>Adjusted tonemapping</li>
+                <li>Improved color grading through RRe36's custom film stock response emulation</li>
+                <li>Adjusted atmosphere parameters</li>
+                <li>Adjusted auto exposure behavior</li>
+                <li>Added sunlight in VoxelPT reflections</li>
+                <li>Added various block mappings</li>
+                <ul>
+                    <li>Including new foliage blocks of Minecraft 1.20</li>
+                </ul>
+                <li>Added a toggle for the purkinje effect</li>
+                <li>Improved <abbr title="Temporal Anti-Aliasing and Upscaling">TAAU</abbr> sharpness and responsiveness</li>
+                <ul>
+                    <li>Also exposed various <abbr title="Temporal Anti-Aliasing and Upscaling">TAAU</abbr> related settings</li>
+                </ul>
+                <li>Added support for color management of Iris 1.6.4</li>
+                <li>Fixed lighting on cacti</li>
+                <li>Improved motion blur</li>
+                <li>Improved emission mappings for various sculk blocks</li>
+                <li>Fixed glow berries emission</li>
+                <li>Added emission mapping for lava cauldrons</li>
+                <li>Fixed missing <abbr title="Light Propagation Volume">LPV</abbr> fog contribution settings</li>
+                <li>Fixed mapping of rotated end rods</li>
+                <li>Added support for handheld emitters</li>
+            </ul>
+            <hr>
+            <h2 id="softvoxelslite-changelog"><a href="shaders/softvoxelslite">Soft Voxels Lite</a> Changelog</h2>
+            <p>Version: v2.0 (Latest)
+            <br>
+            Release date: June 12, 2023</p>
+            <h3>Changelog:</h3>
+            <ul>
+                <li>Fixed performance loss by <abbr title="Screen Space Ambient Occlusion">SSAO</abbr> being calculated for areas outside the view</li>
+                <li>Fixed depth of field focus plane visualization</li>
+                <li>Added block mappings for Minecraft 1.19 and 1.20</li>
+                <ul>
+                    <li>Including various new emitter mappings, especially for sculk blocks</li>
+                </ul>
+                <li>Improved <abbr title="Temporal Anti-Aliasing and Upscaling">TAAU</abbr></li>
+                <ul>
+                    <li>Now at 75% by default to compensate for edge sharpness of the lighting compared to the full version (the latter uses spherical harmonics to resolve this)</li>
+                    <li>Also exposed various settings to control <abbr title="Temporal Anti-Aliasing and Upscaling">TAAU</abbr> behavior</li>
+                </ul>
+                <li>Fixed various minor <abbr title="Not a Number">NaN</abbr>s in some scenes</li>
+                <li>Improved distant lightmap fallback for emission</li>
+                <li>Raised default image sharpening strength to 0.7</li>
+                <li>Added support for color management capability of Iris 1.6.4</li>
+                <ul>
+                    <li>Alternatively a setting to choose the display color space when on OptiFine</li>
+                </ul>
+                <li>Added a setting to toggle the purkinje effect</li>
+                <li>Color grading changes through RRe36's custom film stock emulation</li>
+                <li>Added support for the nether</li>
+                <li>Adjusted atmosphere parameters</li>
+                <li>Adjusted auto exposure behavior</li>
+                <li>Improved motion blur</li>
+                <li>Fixed lighting on cacti</li>
+            </ul>
+            <hr>
+            <h2 id="ushader-changelog"><a href="shaders/ushader">UShader</a> Changelog</h2>
+            <p>Version: v2.1 (Latest)
+            <br>
+            Release date: June 13, 2023</p>
+            <h3>Changelog:</h3>
+            <ul>
+                <li>Fixed invisible translucent objects when underwater</li>
+                <li>Fixed displaced cloud lighting when far from world origin</li>
+                <li>Improved volumetric clouds upscaling</li>
+                <li>Added block mappings for Minecraft 1.20</li>
+                <li>Added support for color management capability of Iris 1.6.4</li>
+                <li>Improved motion blur</li>
+                <li>Added proper moon phase handling</li>
+                <ul>
+                    <li>Moon phases now determine the brightness of the moonlight</li>
+                </ul>
+                <li>Raised default volumetric fog mist altitude to 120</li>
+                <li>Fixed volumetric fog rendering on <abbr title="Advanced Micro Devices, Inc.">AMD</abbr> with recent drivers</li>
+            </ul>
+            <hr>
+            <h2 id="vanillaplus-changelog"><a id="vanillaplus-changelog">Vanilla Plus Shader</a> Changelog</h2>
+            <p>Version: v3.2 (Latest)
+            <br>
+            Release date: June 12, 2023</p>
+            <h3>Changelog:</h3>
+            <ul>
+                <li>Added various block mappings for Minecraft 1.20</li>
+                <li>Updated motion blur</li>
+                <ul>
+                    <li>Should behave a lot better around screen edges</li>
+                </ul>
+                <li>Added support for color management capability of iris 1.6.4</li>
+                <li>Updated cloud lighting and ray marching</li>
+                <ul>
+                    <li>Includes improvements to cloud rendering when inside or above clouds</li>
+                </ul>
+                <li>Removed godrays when underwater</li>
+                <li>Added rain mode to volumetric clouds</li>
+                <ul>
+                    <li>Similar to the pendant from <a href="shaders/nostalgia">Nostalgia Shader</a> v5.0</li>
+                </ul>
+                <li>Fixed missing glow on dim emitters</li>
+                <li>Added proper handling of moon phases</li>
+                <ul>
+                    <li>Moon phases now determine the brightness of moonlight</li>
+                </ul>
+            </ul>
+        </div>
+    </body>
+</html>
