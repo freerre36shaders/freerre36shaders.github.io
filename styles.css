@@ -156,16 +156,20 @@ ul {
 }
 
 ul li::before {
-    content: "•";
+    content: '•';
     display: inline-block;
     width: 20px;
     text-align: center;
 }
 
 ul ul li::before {
-    content: "•";
+    content: '•';
 }
 
 img {
     border-radius: 10px;
+}
+
+ol {
+    text-align: left;
 }
